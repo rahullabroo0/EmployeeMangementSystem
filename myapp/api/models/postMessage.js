@@ -58,6 +58,6 @@ var PostMessage = mongoose.model('PostMessage',
     acnum	:	{type:Number},
     ibannum	:	{type:Number}   
 
-},'emp') //colllection Name
+},'employee') //colllection Name
 
 module.exports = { PostMessage}

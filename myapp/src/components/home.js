@@ -5,6 +5,7 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import { myFunction } from '../custom.js';
 import '../style.css';
 import axios from 'axios';
+import {componentDidMountGet} from './about';
 // import React, { useRef } from "react";
 // import cors from "cors";
 
@@ -120,7 +121,7 @@ this.items = this.state.students.map((item, key) =>
         <div className="align-dvd">
             <div id={"k"+key} className="collapse">
                 <div className="form-check form-check-inline">
-                    <button type="button" className="btn btn-primary" > View Details</button>
+                    <button type="button" className="btn btn-primary" onClick={componentDidMountGet(e)}> View Details</button>
                 </div>
                 <div className="form-check form-check-inline">
                     <button type="button" className="btn btn-primary"> Edit</button>
