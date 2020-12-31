@@ -3,23 +3,23 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import {Tabs, Tab} from 'react-bootstrap';
 import '../style.css';
-import axios from 'axios';
+// import axios from 'axios';
 // import './home';
 
-export function componentDidMountGet(e) {
-  console.log(e.target.id);
-  console.log(e.currentTarget.id);
-  axios.get('http://localhost:4000/')
-      .then(res => {
-          const response = res.data;
-          this.setState({
-              students: response
-          });
-      })
-      .catch((error) => {
-          console.log(error);
-      })
-}
+// export function componentDidMountGet(e) {
+//   console.log(e.target.id);
+//   console.log(e.currentTarget.id);
+//   axios.get('http://localhost:4000/')
+//       .then(res => {
+//           const response = res.data;
+//           this.setState({
+//               students: response
+//           });
+//       })
+//       .catch((error) => {
+//           console.log(error);
+//       })
+// }
 
 function About (){ 
 return (

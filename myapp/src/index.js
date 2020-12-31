@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Home from './components/home'; 
 import About from './components/about';
 import Employee from './components/employee';
+import ViewDetail from './components/viewdetail.';
 
 
 
@@ -31,7 +32,8 @@ class MyForm extends React.Component {
             <Switch> 
               <Route exact path='/' component={Home}></Route> 
               <Route exact path='/about' component={About}></Route> 
-              <Route exact path='/employee' component={Employee}></Route> 
+              <Route exact path='/employee' component={Employee}></Route>
+              <Route exact path='/viewdetail' component={ViewDetail}></Route> 
             </Switch> 
           </div> 
         </Router> 

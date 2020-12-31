@@ -5,10 +5,10 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import { myFunction } from '../custom.js';
 import '../style.css';
 import axios from 'axios';
-import {componentDidMountGet} from './about';
+// import {componentDidMountGet} from './about';
 // import React, { useRef } from "react";
 // import cors from "cors";
-
+//  import { BrowserRouter as Link } from 'react-router-dom'; 
 // import { BrowserRouter as Router, Route, Link, Switch, useNavigates  } from 'react-router-dom'; 
 // import Home from './components/home'; 
 // import About from './components/about';
@@ -121,7 +121,11 @@ this.items = this.state.students.map((item, key) =>
         <div className="align-dvd">
             <div id={"k"+key} className="collapse">
                 <div className="form-check form-check-inline">
-                    <button type="button" className="btn btn-primary" onClick={componentDidMountGet(e)}> View Details</button>
+                    <button type="button" className="btn btn-primary" onClick={() => { this.props.history.push({ pathname: '/viewdetail', data: {item} } ) }}>
+                        {/* <Link to={{ pathname:"/viewdetail" , data :[ item._id] }}>View Detail</Link> */}
+                        {/* {this.props.history.push({ pathname: '/viewdetail', data: {item} } ) } */}
+View Detail
+                    </button>
                 </div>
                 <div className="form-check form-check-inline">
                     <button type="button" className="btn btn-primary"> Edit</button>
